@@ -70,6 +70,6 @@ public class InsertRestReserv extends HttpServlet {
    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       doGet(request, response);
    }
-   //test repository again
+   //test repository
 
 }

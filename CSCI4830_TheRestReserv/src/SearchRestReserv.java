@@ -94,7 +94,7 @@ public class SearchRestReserv extends HttpServlet {
 
    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       doGet(request, response);
-      //testing result again
+      //testing result
    }
 
 }
