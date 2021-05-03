@@ -1,0 +1,744 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    
+/*
+===================
+Links
+===================
+*/
+a:hover{
+	color: gray;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*
+===================
+Buttons
+===================
+*/
+
+.btn {
+  background: red;
+  display: inline-block;
+  padding: 8px 15px;
+  color: white;
+  
+}
+
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+}
+.border-double {
+	border: 8px double green;
+}
+.border-dashed {
+	border: 8px dashed blue;
+}
+.border-dotted {
+	border: 16px dotted yellow;
+}
+.border-circle {
+	border-radius: 4px;
+}
+.border-rounded {
+	border-radius: 50%;
+}
+/*
+===================
+Title Section
+===================
+*/
+.logo {
+	color: white;
+	text-transform:uppercase;
+	text-shadow: 2px 2px 1px rgba( 0, 0, 0, .2);
+	float: left;
+	padding-left: 20px;
+}
+.logo img {
+     max-height: 75px;
+	 width: 75px;
+	 display: inline-block;
+	 padding-top: 20px;
+	}
+.byline {
+	color: solid black;
+	float:left;
+	padding: 0px 0 15px 0;
+	font-size: 12px;
+	text-align: left;
+}
+.page-header {
+	color: white;
+	padding-bottom: 40px;
+	border-bottom: 2px solid black;
+}
+/*
+===================
+Headers
+===================
+*/
+
+h1 {
+	font-size: 30px;
+	font-weight: 400;
+	
+}
+
+h2 {
+	font-size:30px;
+	font-weight: 400;
+	color: black;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 400;
+}
+h1, h3, h4, h5, p {
+    margin-bottom: 22px;
+}
+
+/*
+===================
+Clear Fixs
+===================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+===================
+Grid and Containers
+===================
+*/
+
+.container,
+.grid {
+  margin: 0 auto;
+  width:960px;
+}
+ .container
+  {width:950px;margin:0 auto;
+  	background: white;
+  }
+  .container a{
+  	color: white;
+  }
+ .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+
+.tagline {
+  padding: 10px 66px 15px 0;
+  float: right;
+}
+
+/*
+===================
+Text Alignment
+===================
+*/
+
+.center-alignment {
+  text-align: center;
+  box-align: center;
+}
+
+.default {
+	color: black;
+}
+
+/*
+===================
+Universal Font and Background
+===================
+*/
+p {
+	font: italic normal 16px/150% "yanone Kaffeesatz", "shadows into light", Arial, "times new roman" ;
+}
+
+body {
+	  background: #303030	;
+	  display: block;
+	  line-height: 1;
+} 
+
+
+/*
+===================
+Rows and Column Sections
+===================
+*/
+.column, div.span-1, .span-2, .span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, div.span-11, div.span-12, div.span-13, div.span-14, div.span-15, div.span-16, div.span-17, div.span-18, div.span-19, div.span-20, div.span-21, div.span-22, div.span-23, div.span-24 {float:left;margin-right:10px;}
+.last, div.last {margin-right:0;}
+.span-1 {width:30px;}
+.span-2 {width:70px; 
+		padding-left: 50px;}
+.span-3 {width:110px;}
+.span-4 {width:150px;}
+.span-5 {width:190px;}
+.span-6 {width:230px;}
+.span-7 {width:270px;}
+.span-8 {width:310px;}
+.span-9 {width:350px;}
+.span-10 {width:390px;}
+.span-11 {width:430px;}
+.span-12 {width:470px;}
+.span-13 {width:510px;}
+.span-14 {width:550px;}
+.span-15 {width:590px;}
+.span-16 {width:630px;}
+.span-17 {width:670px;}
+.span-18 {width:710px;}
+.span-19 {width:750px;}
+.span-20 {width:790px;}
+.span-21 {width:830px;}
+.span-22 {width:870px;}
+.span-23 {width:910px;}
+.span-24, div.span-24 {width:950px;margin:0;}
+.icon {
+		position: fixed;
+		padding-left: 12%;
+	}
+	.expand {
+	display: none;
+}
+.container4 table {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	
+
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-size: 24px;
+	background: black;
+}
+
+
+.row {
+	background: #F0F0F0;
+	padding: 66px;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 980px;
+}
+.row a {
+	color: white;
+}
+.row,
+.row-alt {
+	width: 100%;
+}
+.row-alt {
+	text-align: left;
+	margin-right: 10px;
+	float: left;
+}
+
+.grid, .col-1-1 , col-1-2{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.col-1-1 {
+	width:30%;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.col-1-1 img {
+box-shadow: 4px 4px 4px black;
+}
+.col-1-2 {
+	width:40%;
+}
+.col-buy-1{
+padding-right:40px;
+display: inline-block;
+position: relative;
+width:50%;
+float: left;
+padding-top: 50px;
+}
+.col-buy-2{
+display: inline-block;
+position: relative;
+width:50%;
+border-left: 1px solid black;
+text-align: center;
+padding-top: 50px;
+overflow: hidden;
+}
+.col-buy-2 img{
+margin-bottom: 22px;
+box-shadow: 4px 4px 4px solid black;
+} 
+
+	
+/*home Page 31 - 54*/
+
+
+/*
+===================
+Footer
+===================
+*/
+
+footer {
+	clear: both;
+	background: white;
+	color: black;
+	position: relative;
+	display: block;
+
+
+}
+
+footer p{
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 980px;
+	padding-top: 25px;
+}
+.footer-txt {
+	border-right: 1px solid black;
+	 padding: 10px 15px;
+	 text-align: center;
+}
+footer img{
+	padding-top: 10px;
+    width: 80px;
+    height: 80px;
+    text-indent: -999em;
+    font-size: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+.hero {
+	color: black;
+	padding: 66px 66px 66px 100px;
+	border: 60px solid white;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1225px;
+}
+.hero a:hover {
+	color: none;
+	opacity: .80;
+}
+.hero a{
+color: black;
+}
+.col-buy-2 a:hover {
+	color: none;
+	opacity: .80;
+}
+.col-buy-2 a{
+color: black;
+}
+
+/*
+===================
+Images 
+===================
+*/
+
+.title-page img {
+	border-radius: 5px;
+	max-width: 100%;
+	margin-bottom: 22px;
+	display: inline-block;
+} 
+.bg {
+	padding: 66px;
+	border: 60px solid #F0F0F0;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 980px;
+	background-image: url("background.jpeg");
+	height: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.author-img img{
+	max-width: 400px;
+	max-height: 400px;
+	padding: 5px 30px 15px 0;
+	
+}
+.absolute-img img{
+	max-width: 100%
+	position: absolute;
+}
+.resize {
+	max-height: 70px;
+	 width: 70px;
+	 display: inline-block;
+}
+
+.align-img {
+	left: 130px;
+}
+
+.container-img {
+ 
+  position: relative;
+ 
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.container-img img{
+height: 400px;
+width: 100%;
+max-width: 980px;
+
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+}
+.centered2 {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+/*
+===================
+Slide Show
+===================
+*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*
+===================
+Contact Page Forms
+===================
+*/
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px 0 12px 0; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+form + label:hover {
+	color: none;
+}
+
+/*
+===================
+Table for Title Tabs
+===================
+*/
+
+.title {
+	position: relative;
+	float: right;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px
+}
+.title th{
+	padding: 0 15px 22px 22px;
+}
+.title th:last-child {
+	padding-right:15px;
+}
+.title table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	background: inherit;
+}
+.sticky th {
+	padding: 5px 10px 15px 10px;
+}
+.icon {
+	padding-left: 12%;
+	position: fixed;
+}
+
+.showHide {
+	display: none;
+}
+.showHide input{
+	display:none;
+}
+@media screen and (max-width: 600px) {
+  .title {display: none;}
+  .showHide {
+  	padding-top: 40px;
+    float: right;
+    display: block;
+  }
+}
+
+
+/*
+===================
+Table for Events Tabs
+===================
+*/
+
+.row table {
+  border-collapse: separate;
+  border-spacing: 30px;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.row td {
+  padding: 8px 15px;
+  vertical-align: middle;
+}
+.row thead {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+th:first-child {
+  text-align: center;
+}
+th:last-child {
+  border-top-right-radius: 5px;
+}
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+/*
+===================
+Navigation Tabs
+===================
+*/
+.title input {
+	display: none;
+}
+#navigation {
+	display: none;
+}
+.title, .showHide label {
+	cursor: pointer;
+}
+nav {
+	max-height: 0;
+	overflow: hidden;
+	transition: width .5s, height .5s;	
+}
+input:checked ~ nav {
+	max-height: 120px;
+}
+input:checked + label {
+	color: orange;
+}
+
+ul{
+	font: bold 
+	text-transform: uppercase;
+}
+ li {
+ 	padding-bottom: 10px;
+}
+li:first-child { 
+	padding-top: 10px;
+}
+	
+li:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}

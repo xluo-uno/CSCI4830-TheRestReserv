@@ -1,0 +1,83 @@
+<!Doctype html>
+<html lang = "en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="projectStyle.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Restaurant Reserves</title>
+	</head>
+<html>
+<body>
+	<figure class = "background">
+		<img src = "background.jpeg" height = 100%; width = 100%>
+<h1 class = "top-left" style = "color: white">
+	<img src="restaurantlogo.png" height = 150; width = 400;>
+</h1>
+<div class = " top-right">
+	<input type ="checkbox" name = "navigation" id ="navigation" value = "navigation"> 
+	<label for = "navigation"><i class = "fa fa-bars" style = "font-size:48px; color: white;"> Menu </i></label>
+		<nav>
+			<ul>
+		 		<li><a href="/CSCI4830_TheRestReserv/search_RestReserv.html">Search</a></li>
+		 		<li><a href="/CSCI4830_TheRestReserv/insert_RestReserv.html">Sign up</a></li>
+		 		<li><a href="Contact.html">Contact us</a></li>
+		 	</ul>
+		</nav>
+</div>
+</figure>
+<header class=" center-alignment expand container4 " id="myHeader">
+		<table>
+				<tr>
+					<th><a href="/CSCI4830_TheRestReserv/search_RestReserv.html">Search</a></th>
+					<th><a href="/CSCI4830_TheRestReserv/insert_RestReserv.html">Sign up</a></th>
+					<th><a href="project.html"><img src="restaurantlogo.png" height = 50; width = 150 style ="padding-top: 15px" ></a></th>
+					<th><a href="Contact.html">Contact us</a></th>
+				</tr>
+		</table>
+</header>
+<section class = " container-img row">
+ <div class = "span-12">
+ 	<h1> What we do</h1>
+ 	<p>Restaurant Reserves is a web-based application to generate your basic information. This app will utilize your information to make/modify reservations</p>
+ </div>
+ <div class = "span-6" style = "float: right;">
+ <h1> Map It</h1>
+ <ol style = "padding-left: 40px; font-size: 24px">
+ 	<li>Google Maps API</li>
+ 	<li>Yelp API</li>
+ </ol>
+</div>
+</section>
+
+
+	<footer class = "row">
+	<div class = "span-8 footer-txt">
+	<h2>Restaurant Reserves</h2>
+	<hr>
+	  <p> Phone: 402-123-1234 </p>
+	    <p> Email: help@restaurantreserves.com</p>
+	  <p>Copyright 2021 Restaurant Reserves. All rights reserved.
+	</div>
+
+
+</footer>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > 120) {
+    header.classList.add("sticky");
+    header.classList.remove("expand")
+ 
+  } else {
+    header.classList.remove("sticky");
+    header.classList.add("expand")
+  }
+}
+</script>
+</body>
+</html>
