@@ -137,7 +137,7 @@ public class TestCase2 {
   }
   
   @Test
-  public void testUntitledTestCase4() throws Exception {
+  public void testSearchName() throws Exception {
     driver.get("http://ec2-18-220-194-215.us-east-2.compute.amazonaws.com:8080/CSCI4830_TheRestReserv/project.html");
     driver.findElement(By.xpath("//img")).click();
     driver.findElement(By.xpath("//img")).click();
